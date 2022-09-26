@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//functie folosita pentru a vedea daca dala este gri
 bool exista(int gri[], int k, int val) {
     for (int i = 1; i <= k; i++) {
         if (gri[i] == val) {
@@ -13,25 +14,6 @@ bool exista(int gri[], int k, int val) {
     }
 
     return false;
-}
-
-int max_int(int arr[], int s)
-{
-    int Max,temp;
-    int i=0;
-    temp=i;
-    Max=arr[i];
-    while(i < s)
-    {
-        if (Max < arr[i])
-        {
-            Max=arr[i];
-            temp=i;
-        }
-        i++;
-    }
-
-    return temp;
 }
 
 int main() {
